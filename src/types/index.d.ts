@@ -104,6 +104,9 @@ export type BreadcrumbItemType = BreadcrumbItem;
 
 interface ImportMetaEnv {
   readonly VITE_SIGN_IN_URL: string
+  readonly VITE_GITHUB_URL: string
+  readonly VITE_LINKEDIN_URL: string
+  readonly VITE_WEBSITE_URL: string
 }
 
 interface ImportMeta {

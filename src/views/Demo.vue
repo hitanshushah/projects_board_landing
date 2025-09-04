@@ -523,7 +523,7 @@ checkForNewProject();
                 :title="`Preview your ${publicProjects.length} public project${publicProjects.length !== 1 ? 's' : ''}`"
                 class="border-2 rounded-lg !text-sm py-3 md:py-2 px-4 content-center text-white !bg-black !border-gray-600"
               >
-                Preview Public URL
+                Preview Your Domain
                 <v-badge
                   :content="publicProjects.length"
                   inline
@@ -712,5 +712,27 @@ checkForNewProject();
 
 
     </v-container>
+
+    <footer class="bg-black border-t border-gray-800 py-8">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="flex items-center mb-4 md:mb-0">
+            <img src="/images/logos/dark_mode.png" alt="ProjectsBoard" class="w-24 h-12 rounded mr-4 object-cover">
+            <div class="text-gray-300">
+              <p class="font-semibold text-lg">ProjectsBoard</p>
+              <p class="text-sm text-gray-400">Showcase your work beautifully</p>
+            </div>
+          </div>
+          <div class="text-center md:text-right">
+            <p class="text-gray-400 text-sm">
+              © {{ new Date().getFullYear() }} ProjectsBoard. All rights reserved.
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+              Developed by <a href="https://hitanshushah.projectsboard.live" target="_blank" class="text-blue-400 hover:text-blue-300 cursor-pointer">Hitanshu Shah</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>

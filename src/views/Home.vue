@@ -100,7 +100,7 @@
             />
 
             <FeatureMockup
-              title="Preview Public Page Before Publishing"
+              title="Preview Your Domain Before Publishing"
               description="See exactly how your portfolio will look to visitors before making it public."
               :features="[
                 'Live preview of public portfolio',
@@ -174,6 +174,7 @@
           <p class="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8 max-w-md mx-auto leading-relaxed">
             Join thousands of creators who trust us with their portfolios
           </p>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto px-4">
           <v-btn
             size="large"
             color="#17265C"
@@ -183,6 +184,15 @@
             Start Building Now
             <v-icon class="ml-2">mdi-arrow-right</v-icon>
           </v-btn>
+          <v-btn
+              variant="outlined"
+              size="large"
+              class="content-center px-6 sm:px-8 py-3 text-base sm:text-lg w-full sm:w-auto min-h-[48px] border-2 border-gray-600 text-white hover:border-gray-400"
+              @click="goToDemo"
+            >
+              View Demo
+            </v-btn>
+            </div>
         </div>
 
         

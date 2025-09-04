@@ -181,17 +181,17 @@ const userProfile = ref({
     {
       type: 'linkedin',
       title: 'LinkedIn',
-      url: '/demo'
+      url: (import.meta as any).env.VITE_LINKEDIN_URL || '/demo'
     },
     {
       type: 'github',
       title: 'GitHub',
-      url: '/demo'
+      url: (import.meta as any).env.VITE_GITHUB_URL || '/demo'
     },
     {
       type: 'portfolio',
       title: 'Portfolio',
-      url: '/demo'
+      url: (import.meta as any).env.VITE_WEBSITE_URL || '/demo'
     }
   ],
   documents: [
@@ -375,7 +375,8 @@ const getLinkIcon = (linkType: string): string => {
                 :key="`${link.title}-${link.url}`"
                 variant="outlined"
                 size="medium"
-                @click="goToDemo"
+                :href="link.url"
+                target="_blank"
                 class="!bg-black text-gray-300 !border-gray-800 hover:!border-gray-400 hover:!bg-gray-900 transition-all duration-200 px-4 py-2 cursor-pointer"
               >
                 <v-icon :icon="getLinkIcon(link.type || link.title)" class="mr-2" size="18"></v-icon>

@@ -25,6 +25,7 @@
             size="xx-large"
             variant="text"
             :title="`Visit ${linkedinLink.title}`"
+            @click.stop
           >
             <v-icon class="text-gray-300" size="small">mdi-linkedin</v-icon>
           </v-btn>
@@ -37,6 +38,7 @@
             size="xx-large"
             variant="text"
             :title="`Visit ${githubLink.title}`"
+            @click.stop
           >
             <v-icon class="text-gray-300" size="small">mdi-github</v-icon>
           </v-btn>
@@ -50,6 +52,7 @@
             size="xx-large"
             variant="text"
             :title="`Visit ${portfolioLink.title}`"
+            @click.stop
           >
             <v-icon class="text-gray-300" size="small">mdi-web</v-icon>
           </v-btn>
@@ -600,17 +603,17 @@ const currentProfile = ref({
     {
       type: 'linkedin',
       title: 'LinkedIn',
-      url: 'https://linkedin.com/in/demo-user'
+      url: (import.meta as any).env.VITE_LINKEDIN_URL || 'https://linkedin.com/in/demo-user'
     },
     {
       type: 'github',
       title: 'GitHub',
-      url: 'https://github.com/demo-user'
+      url: (import.meta as any).env.VITE_GITHUB_URL || 'https://github.com/demo-user'
     },
     {
       type: 'portfolio',
       title: 'Portfolio',
-      url: 'https://demo-user.dev'
+      url: (import.meta as any).env.VITE_WEBSITE_URL || 'https://demo-user.dev'
     }
   ],
   documents: [
