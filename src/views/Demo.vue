@@ -407,6 +407,21 @@ const filteredProjects = computed(() => {
   })
 })
 
+// Check if there are any active filters
+const hasActiveFilters = computed(() => {
+  return currentFilters.value.search.trim() !== '' ||
+         currentFilters.value.categories.length > 0 ||
+         currentFilters.value.statuses.length > 0 ||
+         currentFilters.value.technologies.length > 0
+})
+
+// Check if dark mode is active (assuming it's based on a theme or class)
+const isDark = computed(() => {
+  return document.documentElement.classList.contains('dark') || 
+         document.documentElement.getAttribute('data-theme') === 'dark' ||
+         window.matchMedia('(prefers-color-scheme: dark)').matches
+})
+
 
 const createProject = () => {
 
@@ -508,7 +523,7 @@ checkForNewProject();
   <div class="min-h-screen bg-background">
     <DemoNavbar />
     <div style="height: 72px;"></div>
-    <v-container class="p-8 max-w-max">
+    <v-container class="p-8 max-w-none">
         <div class="mb-6">
           <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4 md:gap-0">
             <h1 class="text-2xl md:text-3xl font-bold text-white">
@@ -602,7 +617,7 @@ checkForNewProject();
     </div>
 
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div v-if="filteredProjects.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div
         v-for="project in filteredProjects"
         :key="project.id"
@@ -640,6 +655,33 @@ checkForNewProject();
           ></v-btn>
         </div>
       </div>
+    </div>
+
+    <div v-else class="text-center py-16">
+      <v-icon 
+        :icon="hasActiveFilters ? 'mdi-filter-off' : 'mdi-folder-plus'" 
+        size="120" 
+        :color="isDark ? 'gray-300' : 'gray-600'" 
+        class="mb-6"
+      ></v-icon>
+      
+      <h2 class="text-4xl font-bold text-gray-700 mb-4">
+        <span v-if="hasActiveFilters">
+          No projects found
+        </span>
+        <span v-else>
+          No projects yet
+        </span>
+      </h2>
+      
+      <p class="text-lg text-gray-500 mb-8 max-w-md mx-auto">
+        <span v-if="hasActiveFilters">
+          No projects match your current search and filter criteria. Try adjusting your filters or create a new project.
+        </span>
+        <span v-else>
+          Start creating projects to organize your work and display it on dashboard.
+        </span>
+      </p>
     </div>
 
     

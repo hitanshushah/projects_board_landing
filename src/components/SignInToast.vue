@@ -1,23 +1,33 @@
 <template>
   <Transition name="slide-fade">
-    <div v-if="show" class="fixed top-20 left-1/2 transform -translate-x-1/2 p-4 bg-gray-800 border border-gray-600 rounded-lg flex items-center gap-3 z-[9999] max-w-md">
-      <p class="text-white">{{ message }}</p>
-      <v-btn
-        size="small"
-        variant="elevated"
-        color="primary"
-        @click="goToSignIn"
-        class="!bg-blue-600 !text-white"
-      >
-        Sign In
-      </v-btn>
-      <v-btn
-        icon="mdi-close"
-        size="small"
-        variant="text"
-        color="white"
-        @click="$emit('close')"
-      ></v-btn>
+    <div
+      v-if="show"
+      class="fixed top-20 left-1/2 transform -translate-x-1/2 
+             p-4 bg-gray-800 border border-gray-600 rounded-lg 
+             flex flex-col sm:flex-row sm:items-center gap-3 
+             z-[9999] w-[90%] max-w-sm sm:max-w-md md:max-w-lg"
+    >
+      <p class="text-white text-sm sm:text-base flex-1 break-words">
+        {{ message }}
+      </p>
+      <div class="flex gap-2 justify-end sm:justify-start flex-wrap">
+        <v-btn
+          size="small"
+          variant="elevated"
+          color="primary"
+          @click="goToSignIn"
+          class="!bg-blue-600 !text-white"
+        >
+          Sign In
+        </v-btn>
+        <v-btn
+          icon="mdi-close"
+          size="small"
+          variant="text"
+          color="white"
+          @click="$emit('close')"
+        ></v-btn>
+      </div>
     </div>
   </Transition>
 </template>
@@ -38,7 +48,7 @@ interface Emits {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  message: 'Please sign in to access this feature'
+  message: 'Please sign in to access this feature',
 });
 
 const emit = defineEmits<Emits>();

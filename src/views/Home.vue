@@ -16,11 +16,11 @@
       <div class="max-w-6xl mx-auto">
         
         <div class="text-center mb-16 sm:mb-20 lg:mb-24">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white leading-tight">
-            Showcase Projects, Own Domain
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white leading-tight">
+            Publish Your Projects. Own Your Domain
           </h1>
           <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-4">
-            Create beautiful project portfolios in minutes. Simple, professional, and effective.
+            Create modern project portfolios in minutes. Simple, professional, and effective.
           </p>
           <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto px-4">
             <v-btn
@@ -126,7 +126,7 @@
             />
 
             <FeatureMockup
-              title="Beautiful Themes"
+              title="Dual Theme"
               description="Switch seamlessly between dark and light modes."
               :features="[
                 'Elegant dark and light themes',

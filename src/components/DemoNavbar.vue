@@ -105,7 +105,7 @@
         </div>
 
         
-          <div class="flex items-center ml-2 hidden md:flex">
+          <div class="flex items-center ml-2 hidden md:flex"  @click.stop>
             <v-tooltip
               :text="currentProfile?.share_profile ? 'Projects URL is public' : 'Projects URL is private'"
               location="bottom"
