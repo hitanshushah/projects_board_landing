@@ -17,7 +17,7 @@
         
         <div class="text-center mb-16 sm:mb-20 lg:mb-24">
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white leading-tight">
-            Showcase Your Projects
+            Showcase Projects, Own Domain
           </h1>
           <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-4">
             Create beautiful project portfolios in minutes. Simple, professional, and effective.
@@ -55,7 +55,7 @@
               </div>
               <h3 class="text-lg sm:text-xl font-medium mb-3 sm:mb-4 text-white">Add Your Projects</h3>
               <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Upload images, add descriptions, and list the technologies you used.
+                Upload images, add descriptions, list the technologies and add links.
               </p>
             </div>
             <div class="text-center">
@@ -73,7 +73,7 @@
               </div>
               <h3 class="text-lg sm:text-xl font-medium mb-3 sm:mb-4 text-white">Share & Impress</h3>
               <p class="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Get a shareable link to showcase your work to employers and clients.
+                Create your own domain url to showcase your work to employers and clients.
               </p>
             </div>
           </div>
@@ -87,10 +87,10 @@
           
           <div class="space-y-12 sm:space-y-16 lg:space-y-20">
             <FeatureMockup
-              title="Create & Manage Projects"
-              description="Add unlimited projects with images, descriptions, and tech stacks."
+              title="Add & Manage Projects"
+              description="Manage unlimited projects, edit details and hide it as per convenience."
               :features="[
-                'Upload project images and screenshots',
+                'Upload project images and documents',
                 'Add detailed descriptions and technology tags',
                 'Include live demo and GitHub links',
                 'Track project status and timeline'
@@ -101,12 +101,12 @@
 
             <FeatureMockup
               title="Preview Your Domain Before Publishing"
-              description="See exactly how your portfolio will look to visitors before making it public."
+              description="See exactly how your project portfolio will look to visitors before making it public."
               :features="[
                 'Live preview of public portfolio',
                 'Toggle private/public domain visibility',
                 'Instant preview updates',
-                'Control who can see your work'
+                'Share your resume and profile'
               ]"
               mockup-type="kanban"
               icon="eye"
@@ -118,8 +118,8 @@
               :features="[
                 'Personal bio and professional title',
                 'Social media and portfolio links',
-                'Contact information and location',
-                'Automatic avatar generation'
+                'Upload profile picture',
+                'Add resume, cover letter and other documents'
               ]"
               mockup-type="profile"
               icon="user"
@@ -144,8 +144,8 @@
               :features="[
                 'Clean, professional URLs',
                 'One-click copy to clipboard',
-                'QR code generation for easy sharing',
-                'SEO-optimized for discoverability'
+                'Easy to share over social media',
+                'Customized and persnolized domain url'
               ]"
               mockup-type="url"
               icon="share"
@@ -172,7 +172,7 @@
             Ready to showcase your work?
           </h2>
           <p class="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8 max-w-md mx-auto leading-relaxed">
-            Join thousands of creators who trust us with their portfolios
+            Join people transforming their projects into polished portfolios ready to be shared
           </p>
           <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto px-4">
           <v-btn

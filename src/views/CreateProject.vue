@@ -306,7 +306,7 @@ const emit = defineEmits<{
             class="w-full md:w-auto py-3 md:py-0"
             @click="createProject"
           >
-            Create Project
+            Add Project
           </v-btn>
         </div>
       </div>
@@ -500,7 +500,7 @@ const emit = defineEmits<{
                  color="#17265C"
                  @click="createProject"
                >
-                 Create Project
+                 Add Project
                </v-btn>
              </div>
            </v-card>

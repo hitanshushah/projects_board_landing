@@ -232,7 +232,7 @@
                     <div class="flex items-center justify-between gap-2">
                       <div class="bg-gray-600 h-3 w-1/4 rounded flex-shrink-0"></div>
                       <div class="flex gap-1 flex-shrink-0">
-                        <div class="bg-blue-600 text-white text-xs px-2 py-1 rounded">QR</div>
+                        <div class="bg-blue-600 text-white text-xs px-2 py-1 rounded">Edit</div>
                         <div class="bg-green-600 text-white text-xs px-2 py-1 rounded">Share</div>
                       </div>
                     </div>

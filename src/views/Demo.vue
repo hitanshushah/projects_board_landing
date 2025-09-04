@@ -75,11 +75,11 @@ const initializeProjects = () => {
         id: 1,
         name: "AI Dashboard",
         description: "Monitor ML experiments with charts & logs.",
-        category: "web",
+        category: "AI",
         status: "progress",
         is_public: false,
         tags: ["AI", "ML"],
-        technologies: ["Vue", "Vuetify", "Tailwind"],
+        technologies: ["Python", "Postgres", "Tailwind"],
         thumbnail: "https://placehold.co/600x400?text=AI+Dashboard",
         start_date: "2025-01-01",
         links: [
@@ -102,10 +102,10 @@ const initializeProjects = () => {
         assets: [
           {
             id: 1,
-            name: "dashboard-main.png",
+            name: "dashboard1.png",
             display_name: "Dashboard Overview",
-            filename: "dashboard-main.png",
-            url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+            filename: "dashboard1.png",
+            url: "/images/dummy-projects/dashboard/dashboard1.png",
             asset_type: {
               key: "images",
               name: "Images"
@@ -113,10 +113,10 @@ const initializeProjects = () => {
           },
           {
             id: 2,
-            name: "dashboard-charts.png",
+            name: "dashboard2.png",
             display_name: "Analytics Charts",
-            filename: "dashboard-charts.png",
-            url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+            filename: "dashboard2.png",
+            url: "/images/dummy-projects/dashboard/dashboard2.png",
             asset_type: {
               key: "images",
               name: "Images"
@@ -124,10 +124,10 @@ const initializeProjects = () => {
           },
           {
             id: 3,
-            name: "dashboard-mobile.png",
+            name: "dasboard3.png",
             display_name: "Mobile View",
-            filename: "dashboard-mobile.png",
-            url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=800&fit=crop",
+            filename: "dasboard3.png",
+            url: "/images/dummy-projects/dashboard/dasboard3.png",
             asset_type: {
               key: "images",
               name: "Images"
@@ -143,7 +143,7 @@ const initializeProjects = () => {
     status: "done",
     is_public: true,
     tags: ["E-commerce", "Stripe"],
-    technologies: ["Vue", "Nuxt", "Postgres"],
+    technologies: ["Vue", "Nuxt", "MongoDB"],
     thumbnail: "https://placehold.co/600x400?text=Ecommerce",
     start_date: "2024-06-01",
     end_date: "2024-12-01",
@@ -165,7 +165,7 @@ const initializeProjects = () => {
         name: "ecommerce-home.png",
         display_name: "Homepage",
         filename: "ecommerce-home.png",
-        url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+        url: "images/dummy-projects/ecommerce/ecommerce1.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -176,7 +176,7 @@ const initializeProjects = () => {
         name: "ecommerce-product.png",
         display_name: "Product Page",
         filename: "ecommerce-product.png",
-        url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+        url: "images/dummy-projects/ecommerce/ecommerce2.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -187,7 +187,7 @@ const initializeProjects = () => {
         name: "ecommerce-cart.png",
         display_name: "Shopping Cart",
         filename: "ecommerce-cart.png",
-        url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=top",
+        url: "images/dummy-projects/ecommerce/ecommerce3.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -230,7 +230,7 @@ const initializeProjects = () => {
         name: "task-list.png",
         display_name: "Task List",
         filename: "task-list.png",
-        url: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop",
+        url: "images/dummy-projects/task/task1.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -241,7 +241,7 @@ const initializeProjects = () => {
         name: "task-detail.png",
         display_name: "Task Detail",
         filename: "task-detail.png",
-        url: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop&crop=center",
+        url: "images/dummy-projects/task/task2.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -252,7 +252,7 @@ const initializeProjects = () => {
         name: "task-calendar.png",
         display_name: "Calendar View",
         filename: "task-calendar.png",
-        url: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop&crop=top",
+        url: "images/dummy-projects/task/task3.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -268,7 +268,7 @@ const initializeProjects = () => {
     status: "progress",
     is_public: false,
     tags: ["Portfolio", "Design"],
-    technologies: ["Vue", "Tailwind", "Framer Motion"],
+    technologies: ["React", "Tailwind", "TypeScript"],
     thumbnail: "https://placehold.co/600x400?text=Portfolio",
     start_date: "2025-01-15",
     links: [
@@ -284,7 +284,7 @@ const initializeProjects = () => {
         name: "portfolio-home.png",
         display_name: "Portfolio Home",
         filename: "portfolio-home.png",
-        url: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop",
+        url: "images/dummy-projects/portfolio/portfolio1.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -295,7 +295,7 @@ const initializeProjects = () => {
         name: "portfolio-projects.png",
         display_name: "Projects Section",
         filename: "portfolio-projects.png",
-        url: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop&crop=center",
+        url: "images/dummy-projects/portfolio/portfolio2.png",
         asset_type: {
           key: "images",
           name: "Images"
@@ -546,7 +546,7 @@ checkForNewProject();
                 @click="createProject"
                 class="py-3 md:py-0 content-center"
               >
-                Create Project
+                Add Project
               </v-btn>
             </div>
           </div>
