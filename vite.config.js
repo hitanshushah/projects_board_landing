@@ -7,7 +7,6 @@ export default defineConfig(({ mode }) => {
   const allowedHosts = env.VITE_ALLOWED_HOSTS
     ? env.VITE_ALLOWED_HOSTS.split(',').map((h) => h.trim())
     : [];
-  console.log(allowedHosts, 'allowedHosts');
   
   return {
     plugins: [
