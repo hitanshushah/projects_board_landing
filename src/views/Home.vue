@@ -245,7 +245,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 function goToSignIn() {
-  const signInUrl = (import.meta as any).env.VITE_SIGN_IN_URL;
+  const signInUrl = 'https://admin.projectsboard.live/';
   if (signInUrl) {
     window.open(signInUrl, '_blank');
   } else {
