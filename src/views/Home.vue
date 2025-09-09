@@ -249,7 +249,7 @@ function goToSignIn() {
   if (signInUrl) {
     window.open(signInUrl, '_blank');
   } else {
-    router.push('/auth/signin');
+    router.push('https://admin.projectsboard.live/');
   }
 }
 
