@@ -245,11 +245,11 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 function goToSignIn() {
-  const signInUrl = (import.meta as any).env.VITE_SIGN_IN_URL;
+  const signInUrl = 'https://admin.projectsboard.live/';
   if (signInUrl) {
     window.open(signInUrl, '_blank');
   } else {
-    router.push('/auth/signin');
+    router.push('https://admin.projectsboard.live/');
   }
 }
 
